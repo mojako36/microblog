@@ -232,6 +232,5 @@ def notifications():
     } for n in notifications])
 
 @bp.route('/about')
-@login_required
 def about():
-    return render_template('about.html', title=_('About-Page'))
+    return render_template('about.html')
